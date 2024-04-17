@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+input{
+    outline: none;
+    padding: 0px;
+    padding-inline: .5rem; 
+}
