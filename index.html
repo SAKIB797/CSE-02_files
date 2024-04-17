@@ -9,22 +9,25 @@
     <title>Document</title>
 </head>
 
-<body class="">
+<body class="flex flex-col  h-full  gap-8 ">
 
+   <header>
     <h3 class="font-mono text-center  py-2   bg-sky-600 text-white   text-3xl  ">//CSE_02</h3>
 
+   </header>
 
-    <div class="flex min-h-full flex-col justify-center    py-12 lg:px-8">
+   <main>
+    <div class="flex min-h-full flex-col justify-center  lg:px-8">
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-            <img class="mx-auto h-20 sm:h-24  w-auto" src="./img/cstu_logo_cse2.jpg" alt="CSTU CSE_02">
+            <img class="mx-auto h-20   w-auto" src="./img/cstu_logo_cse2.jpg" alt="CSTU CSE_02">
             <h2
-                class="sm:mt-5 mt-3  text-center text-orange-400  text-xl   sm:text-2xl font-mono    font-bold leading-9 tracking-tight text-gray-900">
+                class=" mt-2  text-center text-orange-400  text-xl   sm:text-2xl font-mono    font-bold leading-9 tracking-tight text-gray-900">
                 Get
                 your Digital
                 Library</h2>
         </div>
 
-        <div class="form-block sm:mt-10 mt-8   mx-auto  sm:mx-auto   sm:w-full sm:max-w-sm">
+        <div class="form-block  mt-6     mx-auto  sm:mx-auto   sm:w-full sm:max-w-sm">
             <form class=" space-y-6 bg-slate-100 py-10 px-10 rounded-lg  " action="./php/form.php" method="POST">
                 <div>
                     <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Your name</label>
@@ -68,14 +71,19 @@
                 </div>
             </form>
 
-            <p class=" mt-10 text-center text-sm text-gray-500">
+            <p class=" mt-5 text-center text-sm text-gray-500">
                 Need sticker?
                 <a href="./img/sticker.png" download
                     class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">download from here</a>
             </p>
         </div>
     </div>
+   </main>
 
+<footer class="text-center font-mono">
+    <p class="text-sm text-gray-500  ">Developed by <a class=" text-indigo-600 underline" href="https://www.facebook.com/SAKIB797">Iftekhar Sakib</a> <br>
+   Dept. of CSE, <a class="text-orange-500 underline" href="https://cstu.ac.bd/">CSTU</a></p>
+</footer>    
 
 </body>
 

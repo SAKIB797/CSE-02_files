@@ -11,3 +11,7 @@ input{
 .form-block{
     width: 70%;
 }
+
+footer{
+    margin-block: 1rem;
+}
