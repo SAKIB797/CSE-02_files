@@ -11,79 +11,91 @@
 
 <body class="flex flex-col  h-full  gap-8 ">
 
-   <header>
-    <h3 class="font-mono text-center  py-2   bg-sky-600 text-white   text-3xl  ">//CSE_02</h3>
+    <header>
+        <h3 class="header font-mono text-center  py-2   bg-sky-600 text-white   text-3xl  "><a href="./index.html">//CSE_02</a></h3>
 
-   </header>
+    </header>
 
-   <main>
-    <div class="flex min-h-full flex-col justify-center  lg:px-8">
-        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-            <img class="mx-auto h-20   w-auto" src="./img/cstu_logo_cse2.jpg" alt="CSTU CSE_02">
-            <h2
-                class=" mt-2  text-center text-orange-400  text-xl   sm:text-2xl font-mono    font-bold leading-9 tracking-tight text-gray-900">
-                Get
-                your Digital
-                Library</h2>
-        </div>
+    <main>
+        <div class="flex min-h-full flex-col justify-center  lg:px-8">
+            <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                <img class="mx-auto h-20   w-auto" src="./img/cstu_logo_cse2.jpg" alt="CSTU CSE_02">
+                <h2
+                    class=" mt-2  text-center  text-indigo-600  text-xl   sm:text-2xl font-mono    font-bold leading-9 tracking-tight text-gray-900">
+                    Get
+                    your Digital
+                    Library</h2>
+            </div>
 
-        <div class="form-block  mt-6     mx-auto  sm:mx-auto   sm:w-full sm:max-w-sm">
-            <form class=" space-y-6 bg-slate-100 py-10 px-10 rounded-lg  " action="./php/form.php" method="POST">
-                <div>
-                    <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Your name</label>
-                    <div class="">
-                        <input id="name" name="name" type="text" autocomplete="name" required placeholder="Mr. Tom"
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-0 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6">
-                    </div>
-                </div>
+            <div class="form-block  mt-6     mx-auto  sm:mx-auto   sm:w-full sm:max-w-sm">
+                <form class=" space-y-6 bg-slate-100 pb-10 pt-5  px-10 rounded-lg  "
+                    action="https://formsubmit.co/038d203d42fb18fe3f3c2053cd3415f0" method="POST">
 
-                <div>
-                    <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
-                    <div class="mt-2">
-                        <input id="email" name="email" type="email" autocomplete="email" placeholder="john@example.com" required
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-0 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm  sm:leading-6">
-                    </div>
-                </div>
-
-                <div class="flex flex-row justify-between  gap-6    ">
+                    <input type="hidden" name="_next" value="https://sakib797.github.io/CSE-02_files/thanks.html/">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_template" value="basic">
+                    <input type="hidden" name="_autoresponse" value="hello">
                     <div>
-                        <label for="batch" class="block text-sm font-medium leading-6 text-gray-900">Your batch</label>
-                        <div class="mt-2">
-                            <input id="batch" name="batch" type="text" autocomplete="email" placeholder="e.g. 2022-23" required
-                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-0 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm  sm:leading-6">
+                        <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Your name</label>
+                        <div class="">
+                            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Mr. Tom"
+                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-0 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6">
                         </div>
                     </div>
 
                     <div>
-                        <label for="id"  class="block text-sm font-medium leading-6 text-gray-900" >ID</label>
+                        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email
+                            address</label>
                         <div class="mt-2">
-                            <input id="id" name="id" type="text" autocomplete="email" placeholder="B2201XXX" required
+                            <input id="email" name="email" type="email" autocomplete="email"
+                                placeholder="tom@example.com" required
                                 class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-0 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm  sm:leading-6">
                         </div>
                     </div>
-                </div>
 
-                <div>
-                    <button type="submit"
-                        class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                        Submit
-                    </button>
-                </div>
-            </form>
+                    <div class="flex flex-row justify-between  gap-6    ">
+                        <div>
+                            <label for="batch" class="block text-sm font-medium leading-6 text-gray-900">Your
+                                batch</label>
+                            <div class="mt-2">
+                                <input id="batch" name="batch" type="text" autocomplete="email"
+                                    placeholder="e.g. 2022-23" required
+                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-0 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm  sm:leading-6">
+                            </div>
+                        </div>
 
-            <p class=" mt-5 text-center text-sm text-gray-500">
-                Need sticker?
-                <a href="./img/sticker.png" download
-                    class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">download from here</a>
-            </p>
+                        <div>
+                            <label for="id" class="block text-sm font-medium leading-6 text-gray-900">ID</label>
+                            <div class="mt-2">
+                                <input id="id" name="id" type="text" autocomplete="email" placeholder="B2201XXX"
+                                    required
+                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-0 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm  sm:leading-6">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="submit"
+                            class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+
+                <p class=" mt-5 text-center text-sm text-gray-500">
+                    Need sticker?
+                    <a href="./img/sticker.png" download
+                        class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">download from here</a>
+                </p>
+            </div>
         </div>
-    </div>
-   </main>
+    </main>
 
-<footer class="text-center font-mono pb-3">
-    <p class="text-sm text-gray-500  ">Developed by <a class=" text-indigo-600 underline" href="https://www.facebook.com/SAKIB797">Iftekhar Sakib</a> <br>
-   Dept. of CSE, <a class="text-orange-500 underline" href="https://cstu.ac.bd/">CSTU</a></p>
-</footer>    
+    <footer class="text-center font-mono pb-3">
+        <p class="text-sm text-gray-500  ">Developed by <a class=" text-indigo-600 underline"
+                href="https://www.facebook.com/SAKIB797">Iftekhar Sakib</a> <br>
+            Dept. of CSE, <a class="text-orange-500 underline" href="https://cstu.ac.bd/">CSTU</a></p>
+    </footer>
 
 </body>
 
