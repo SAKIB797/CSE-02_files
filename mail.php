@@ -21,27 +21,30 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'pro.iftekhar@gmail.com';
-    $mail->Password = 'nrtrjtrsxbkkyjja'; // Your Gmail password here
+    $mail->Password = ''; // Your Gmail password here
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
     //Recipient (Send customized message to submitted email)
-    $mail->setFrom('pro.iftekhar@gmail.com', 'CSE_02 Digital Library');
+    $mail->setFrom('ihSakib@outlook.com', 'CSE_02 Digital Library');
     $mail->addAddress($email, $name); // Send to submitted email
     $mail->isHTML(true);
     $mail->Subject = 'Digital library Link & Password';
-    $mail->Body = "Thank you for submitting the form.<br><br>" .
-        "Here is the Digital Library link: <a href='https://padlet.com/proiftekhar/notice-board-cse-02-ccwz9pyati4lzcqd'>https://padlet.com/proiftekhar/notice-board-cse-02-ccwz9pyati4lzcqd</a><br>" .
-        "Library password: hello_cstu<br><br>";
+
+   
+    // Read the content of the HTML file
+    $emailContent = file_get_contents('./mail_body.html');
+    // Assign the content to the email body
+    $mail->Body = $emailContent;
 
     $mail->send();
 
     //Recipient (Send form data to pro.iftekhar@gmail.com)
     $mail->clearAddresses(); // Clear previous recipients
-    $mail->setFrom('pro.iftekhar@gmail.com', 'CSTU CSE_02 Digital Library');
+    $mail->setFrom('pro.iftekhar@gmail.com', 'CSE_02 Digital Library');
     $mail->addAddress('pro.iftekhar@gmail.com', ''); // Send to pro.iftekhar@gmail.com
-    $mail->Subject = 'CSTU CSE_02 Form Submission';
-    $mail->Body = "Submitted Form Data:<br>" .
+    $mail->Subject = 'CSE_02 Digital Library Form Submission';
+    $mail->Body = "Submitted Form Data:<br><br>" .
         "Name: $name<br>" .
         "Email: $email<br>" .
         "Batch: $batch<br>" .
@@ -49,7 +52,8 @@ try {
 
     $mail->send();
 
-    echo 'Message has been sent';
+    header('Location: ./thanks.html');
+    exit;
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
