@@ -1,0 +1,11 @@
+ <input type="hidden" name="_next" value="https://sakib797.github.io/CSE-02_files/thanks.html">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_template" value="basic">
+                    <input type="hidden" name="_autoresponse"
+                        value="Thank you for submitting the form. Here is the Digital Library link: https://padlet.com/proiftekhar/notice-board-cse-02-ccwz9pyati4lzcqd & Library password: hello_cstu">
+
+
+
+action="https://formsubmit.co/038d203d42fb18fe3f3c2053cd3415f0" method="POST"
+
+
